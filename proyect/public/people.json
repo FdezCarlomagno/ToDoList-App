@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Pablo",
+        "surname":"Fernandez",
+        "ocupation":"Proffesor",
+        "hobbies": "Work",
+        "age": "48"
+    },
+    {
+        "name": "Valentin",
+        "surname":"Carlomagno",
+        "ocupation":"Student",
+        "hobbies": "Guitar",
+        "age": "18"
+    },
+    {
+        "name": "Santiago",
+        "surname":"Carlomagno",
+        "ocupation":"Student",
+        "hobbies": "Videogames",
+        "age": "15"
+    },
+    {
+        "name": "Analia",
+        "surname":"Carlomagno",
+        "ocupation":"Proffesor",
+        "hobbies": "Painting",
+        "age": "46"
+    }
+]

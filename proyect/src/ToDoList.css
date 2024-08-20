@@ -1,0 +1,433 @@
+/* Global Styles */
+button {
+  cursor: pointer
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#Body {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* ToDo List Container */
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  border-radius: 5px;
+  margin: 40px;
+  padding: 20px;
+  padding-top: 0;
+  box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+}
+
+/* Form Styles */
+
+.formToDoList {
+  background-color: #4700a5;
+  border-radius: 10px;
+  padding: 50px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.formToDoList button,
+.btnSaveEditTask {
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.formToDoList button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid black;
+}
+
+.formToDoList button:active {
+  transform: scale(1.1);
+}
+
+.formToDoList input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #222;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#task {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: -25px;
+  padding-top: 10px;
+  border: 2px solid #2222225e;
+}
+
+#task button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+
+/* List Styles */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: fit-content;
+  align-items: center;
+  background-color: #d6d6d6;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.editButton {
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 9px;
+  margin-left: -23px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 5px;
+}
+
+.editButton:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.editButton:active {
+  background-color: #4700a5;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 300px;
+  text-align: justify;
+}
+
+.checkbox {
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* Task Styles */
+
+.taskDone span {
+  text-decoration: line-through;
+  color: green;
+}
+
+.removeTask,
+.btnExitEdit {
+  border-radius: 50px;
+  color: #222;
+  background-color: rgb(255, 54, 54);
+  margin: 10px;
+  border: none;
+}
+
+.removeTask:hover {
+  transform: scale(1.05);
+  border: 1px solid #222;
+}
+
+.removeTask:active {
+  transform: scale(1.1);
+}
+
+/* Priority Styles */
+
+.highPriority {
+  background-color: rgba(255, 0, 0, 0.466);
+}
+
+.mediumPriority {
+  background-color: rgba(255, 255, 0, 0.527);
+}
+
+.lowPriority {
+  background-color: rgba(0, 128, 0, 0.507);
+}
+.noPriority {
+  background-color: none;
+}
+
+.highPriority button,
+.mediumPriority button,
+.lowPriority button {
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 50px;
+}
+
+.highPriority button:hover,
+.mediumPriority button:hover,
+.lowPriority button:hover {
+  border: 1px solid #222;
+}
+
+/* Hidden Buttons */
+
+.hiddenButtons, .hideButton {
+  display: none;
+}
+
+.hideEditForm {
+  display: none;
+}
+
+.showEditForm {
+  position: absolute;
+  z-index: 999;
+  width: 300px;
+  height: 200px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 66px 27px 400px 200px rgb(202, 202, 202);
+  -webkit-box-shadow: 66px 27px 400px 200px rgb(180, 180, 180);
+  -moz-box-shadow: 66px 27px 400px 200px rgb(196, 196, 196);
+}
+
+.showEditForm input {
+  margin: 10px;
+  display: block;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btnExitEdit {
+  margin-left: 250px;
+}
+
+.btnExitEdit:hover {
+  background-color: #d46161;
+}
+
+.editTaskForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnSaveChanges {
+  border: none;
+  border-radius: 20px;
+  background-color: #4700a5;
+  color: #fff;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.btnSaveChanges:hover {
+  transform: scale(1.1);
+  background-color: #240053;
+}
+
+.sortSelect {
+  margin: 10px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+/*PROGRESS BAR*/
+
+.progressBar {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 8px 8px 29px -1px rgba(0, 0, 0, 0.69);
+  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+progress {
+  width: 250px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 15px;
+  border: none;
+}
+label {
+  margin-left: 5px;
+}
+.dropDownNotes {
+  display: flex;
+  position: relative;
+
+  left: 280px;
+  bottom: -20px;
+}
+.noteCont button {
+  background-color: #222;
+  color: #fff;
+  margin-left: 5px;
+}
+.dropDownNotes:hover, .btnAddNote:hover {
+  background-color: #000000;
+} 
+.dropDown {
+  display: flex;
+  height: fit-content;
+  max-width: 230px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4700a5;
+}
+.sectionFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.notes {
+  margin-top: 5px;
+  color: white;
+  max-width: 160px;
+}
+.inputNotes {
+  max-width: 140px;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+.noteButtons {
+  display:flex;
+  justify-content: end;
+}
+.deleteNote:hover {
+  background-color: rgb(255, 54, 54);
+}
+
+.darkMode {
+  background-color: #000000;
+
+}
+.darkMode .toDoList, .darkMode .progressBar {
+  background-color: #222;
+  color: white;
+}
+.darkMode .toDoList {
+  box-shadow: 1px -1px 40px 16px rgba(231, 231, 231, 0.55);
+  -webkit-box-shadow: 1px -1px 40px 16px rgba(231, 231, 231, 0.55);
+  -moz-box-shadow: 1px -1px 50px 16px rgba(231, 231, 231, 0.55);
+}
+.darkMode .list {
+  background-color: #636363;
+}
+.darkMode .editButton {
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 5px;
+}
+.darkMode .editButton:hover {
+  background-color: #d6d6d6;
+}
+.darkMode .taskDone span {
+  color: rgb(1, 241, 1);
+}
+.darkMode .highPriority {
+  background-color: rgba(255, 0, 0, 0.301);
+}
+.darkMode .mediumPriority {
+  background-color: rgba(255, 255, 0, 0.363);
+}
+.darkMode .lowPriority {
+  background-color: rgba(0, 128, 0, 0.336);
+}
+
+.btnhighPriority  {
+  background-color: red;
+}
+.btnmediumPriority  {
+  background-color: yellow;
+}
+.btnlowPriority  {
+  background-color: green;
+}
+.btnDarkMode {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  margin-top: 10px;
+  background-color: #222;
+  color: white;
+}
+.darkMode .btnDarkMode {
+  background-color: #fff;
+  color: #000000;
+}
+.btnDarkModeFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pencilSvg {
+  width: 10px;
+  height: 15px;
+  transform: scale(1.6);
+}
+.crossSvg {
+  transform: scale(1.8);
+}
+
+
+
+
+
+
